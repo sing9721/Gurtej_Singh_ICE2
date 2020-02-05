@@ -1,0 +1,21 @@
+package Uno;
+
+/**
+ *
+ * @author Gurtej singh
+ */
+public class GamePlayer {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        CardHand ch = new CardHand();
+        ch.generateHand();//delegation
+        for (Card c : ch.cards)//reading from Colors
+        {
+            System.out.println(c.getValue() + " of " + c.getColor());
+        }
+    }
+
+}
